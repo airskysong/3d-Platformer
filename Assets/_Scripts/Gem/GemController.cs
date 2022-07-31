@@ -8,10 +8,11 @@ public class GemController : MonoBehaviour
     [SerializeField] [Range(0, 10)] float rotateSpeed;
     [Header("消失时间")]
     [SerializeField] [Range(0, 10)] float disappearTime;
-
+    [Header("宝石特效")]
+    [SerializeField] GameObject pickUpGemEffect;
     Collider col;
     MeshRenderer meshRenderer;
-
+    GameObject effect;
     WaitForSeconds waitFor;
     private void Start()
     {
@@ -32,7 +33,9 @@ public class GemController : MonoBehaviour
     IEnumerator DisappearLater()
     {
         SetDisappear(false);
+        PlayEffect();
         yield return waitFor;
+        DestroyEffect();
         SetDisappear(true);
        
     }
@@ -41,5 +44,17 @@ public class GemController : MonoBehaviour
     {
         col.enabled = enable;
         meshRenderer.enabled = enable;
+    }
+
+    private void PlayEffect()
+    {
+        effect = Instantiate(pickUpGemEffect, transform.position, Quaternion.identity);
+        effect.transform.SetParent(transform);
+    }
+
+    private void DestroyEffect()
+    {
+        if (effect != null)
+            Destroy(effect);
     }
 }

@@ -33,7 +33,7 @@ public class PlayerState_Run : PlayerState
         }
         else if (!player.isGround())
         {
-            stateMachine.SwitchStart(typeof(PlayerState_Fall));
+            stateMachine.SwitchStart(typeof(PlayerState_CoyoteTime));
         }
     }
 

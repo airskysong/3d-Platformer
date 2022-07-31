@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ed18acaebc5b7240b9adee8e7670c45, type: 3}
-  m_Name: PlayerState_AirJump
+  m_Script: {fileID: 11500000, guid: 4f8868db026975d49b5069bcedaeec5b, type: 3}
+  m_Name: PlayerState_CoyoteTime
   m_EditorClassIdentifier: 
-  animationClipName: 
-  durationPercent: 0
-  jump: 0
-  moveSpeed: 0
+  animationClipName: Unity_Chan_Run
+  durationPercent: 0.1
+  coyoteTime: 0.07

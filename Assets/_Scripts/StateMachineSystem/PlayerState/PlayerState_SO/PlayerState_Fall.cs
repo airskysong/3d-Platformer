@@ -10,12 +10,10 @@ public class PlayerState_Fall : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.SetGravity(false);
     }
 
     public override void Exit()
     {
-        player.SetGravity(true);
     }
 
     public override void LogicUpdate()

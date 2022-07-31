@@ -616,6 +616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -927,6 +931,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 73224591}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &79670805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 420595583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &79670807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79670805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &80917534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1046,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80917534}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &84668410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1696937220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &84668412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84668410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &94110526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,6 +1076,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -1620,6 +1668,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0513ad5e3cc632646b567aeb2ea4470a, type: 2}
   - {fileID: 11400000, guid: a2f551c47785e6b4b802b939e4d72bb5, type: 2}
   - {fileID: 11400000, guid: 1f538fc67cd794a44a08b77d1a1c0e49, type: 2}
+  - {fileID: 11400000, guid: 68d32282ec1ab114a869827a6c14f07d, type: 2}
+  - {fileID: 11400000, guid: 46e19779e9f0c2e4eb4f8887b1299cb8, type: 2}
 --- !u!114 &139370793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,6 +1686,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   detectionRadius: 0.1
+  detector: {fileID: 747501541}
 --- !u!1001 &144660383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1985,6 +2036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2038,6 +2093,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
   m_PrefabInstance: {fileID: 184079023}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &185199805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 94110526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &185199807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185199805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
+--- !u!1 &188989187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 2105528322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &188989189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188989187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
+--- !u!1 &209434103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 870260399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &209434105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209434103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &213480989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3296,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 390478130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &414757894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1486438511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414757896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414757894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &420595583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3191,6 +3326,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -3531,6 +3670,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 477924177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &492328940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 683122144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &492328942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492328940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &506704850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3679,6 +3838,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 507650502}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &513409396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1385068869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &513409398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513409396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &551448126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4477,6 +4656,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 642178523}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &643757688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 2055862864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &643757690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643757688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &670096862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,6 +4856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4755,6 +4958,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.6, z: 1}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!1 &689822490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 2099791148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &689822492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689822490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &691010118
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,6 +5343,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 708777040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &726542266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1289708681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &726542268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726542266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &730103359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5194,6 +5437,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 730103359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &739183294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6751317616852142910, guid: 295745380a050a446afccfde6be2c9eb, type: 3}
+  m_PrefabInstance: {fileID: 6751317617379013875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &739183296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739183294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &739544366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5279,6 +5542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -5362,6 +5629,26 @@ Transform:
   m_Father: {fileID: 139370787}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &752040465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1964941169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &752040467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752040465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &770174293
 GameObject:
   m_ObjectHideFlags: 0
@@ -5864,6 +6151,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 850175181}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &864410570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 744261602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864410572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864410570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &866742111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5948,6 +6255,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -6459,6 +6770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6512,6 +6827,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
   m_PrefabInstance: {fileID: 929887419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &945776575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 46364306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &945776577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945776575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &946748933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6522,6 +6857,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -7879,6 +8218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -8270,6 +8613,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246372541}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1282194184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1849085838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1282194186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282194184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &1288473870
 GameObject:
   m_ObjectHideFlags: 0
@@ -8325,6 +8688,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -8918,6 +9285,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 1375449917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1381541076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 2026448651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1381541078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381541076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &1385068869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8928,6 +9315,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -9072,7 +9463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1406394538
 Transform:
   m_ObjectHideFlags: 0
@@ -9289,6 +9680,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407620626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1414102334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1710320921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1414102336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414102334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &1423136701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10082,6 +10493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -10304,6 +10719,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504411509}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1511600557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2894897690811619309, guid: 0bbca2030fdc5c24baa5e54ce73a28fe, type: 3}
+  m_PrefabInstance: {fileID: 2894897691111814088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1511600559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511600557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &1521006848
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,6 +11061,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 1545820791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1545900331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 184079023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1545900333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545900331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
+--- !u!1 &1579463707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 3923109106775200433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1579463709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579463707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &1590706259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11217,6 +11692,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.6, z: 1}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!1 &1642835373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 946748933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1642835375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642835373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &1649033930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11402,6 +11897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -11465,6 +11964,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -13134,6 +13637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -13313,6 +13820,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.6, z: 1}
   m_Center: {x: 1.75, y: 0.3, z: 0}
+--- !u!1 &1890577588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 929887419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1890577590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890577588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &1890845252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13886,6 +14413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -14087,6 +14618,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 1988637525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990452432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 2015462519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990452434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990452432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1 &1991488569
 GameObject:
   m_ObjectHideFlags: 0
@@ -14142,6 +14693,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -14206,6 +14761,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -14450,6 +15009,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -14951,6 +15514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem Pickup (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -15088,6 +15655,10 @@ PrefabInstance:
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -15438,6 +16009,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 097532d5ed156374dab7997a81ec2fb1, type: 3}
   m_PrefabInstance: {fileID: 2142293981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2144497300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+  m_PrefabInstance: {fileID: 1191473136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144497302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144497300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233a1b4df502fe49a64f36efcc77a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 5
+  disappearTime: 3
+  pickUpGemEffect: {fileID: 172702712778408381, guid: 7bf4c411ce4a06e49bdbd02d6870b7d9, type: 3}
 --- !u!1001 &2894897691111814088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15460,6 +16051,10 @@ PrefabInstance:
     - target: {fileID: 2894897690811619309, guid: 0bbca2030fdc5c24baa5e54ce73a28fe, type: 3}
       propertyPath: m_Name
       value: GateTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894897690811619309, guid: 0bbca2030fdc5c24baa5e54ce73a28fe, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 2894897690811619310, guid: 0bbca2030fdc5c24baa5e54ce73a28fe, type: 3}
       propertyPath: m_RootOrder
@@ -18147,9 +18742,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 892641365}
     m_Modifications:
+    - target: {fileID: 253199397935584808, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_Name
       value: Gem Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923109106766990508, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     - target: {fileID: 3923109106766990510, guid: 424845a16462f7e4c95efce778b2cae1, type: 3}
       propertyPath: m_RootOrder
@@ -18253,6 +18860,10 @@ PrefabInstance:
     - target: {fileID: 6751317616852142910, guid: 295745380a050a446afccfde6be2c9eb, type: 3}
       propertyPath: m_Name
       value: Vitory Gem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751317616852142910, guid: 295745380a050a446afccfde6be2c9eb, type: 3}
+      propertyPath: m_TagString
+      value: Gem
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6751317616852142882, guid: 295745380a050a446afccfde6be2c9eb, type: 3}
