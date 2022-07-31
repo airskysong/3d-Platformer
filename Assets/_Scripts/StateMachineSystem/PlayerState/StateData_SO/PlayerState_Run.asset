@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a8d3c0c5c8f8b489922dc09c90f89e, type: 3}
+  m_Name: PlayerState_Run
+  m_EditorClassIdentifier: 
+  animationClipName: Unity_Chan_Run
+  duration: 0.12
+  moveSpeed: 4
+  acceleration: 6.5
